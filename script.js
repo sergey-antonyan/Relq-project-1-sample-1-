@@ -1,12 +1,12 @@
-const big = document.querySelector("#big");
-let small = document.querySelector("#small");
 
-big.addEventListener("click", ()=> hjh ());
 
-function hjh (){
-    if (big.textContent == "Categories" ){
-      small.style.color = 'red';
-    }
-    console.log(small.style.fontSize);
+let btncount = document.getElementsByClassName("buybtn");
+const ptext = document.getElementById("prodnumb");
+let click = 0 ;
+console.log(ptext);
+
+function prodnumbcount(){
+  click++
+  console.log(click);
+  ptext.innerHTML = click
 }
-console.log(big.textContent);

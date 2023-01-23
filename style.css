@@ -36,10 +36,11 @@ nav{
 
 
 .result {
+  
   display: flex;
   grid-template-columns: 1fr 3fr;
   width: 100%;
-  height: 400px;
+  height: 200vh;
 }
 
 
@@ -49,7 +50,7 @@ nav{
   padding-top: 2%;
   margin-top: 0%;
   width: 20%;
-  height: 820px;
+  height: 200vh;
   background-color: white ;
   text-align: center;
 
