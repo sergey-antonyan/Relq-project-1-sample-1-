@@ -4,10 +4,36 @@
   box-sizing: border-box;
 }
 
+.topdiv{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  height: 38px;
+}
+
+.topdiv p {
+  color:rgb(246, 246, 246, 0.7);
+  text-align: center;
+  padding-top: 10px;
+  font-size: small;
+  word-spacing: 2px;
+}
+
 nav{
+  margin-top: 38px;;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   display: flex;
   width: 100%;
   background-color: rgb(234, 219, 219);
+
 }
 
 .nav-div1{
@@ -33,24 +59,31 @@ nav{
 
 
 
-
-
 .result {
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* .result {
   
   display: flex;
   grid-template-columns: 1fr 3fr;
   width: 100%;
   height: 200vh;
-}
+} */
 
 
 
 .result aside {
 
   padding-top: 2%;
-  margin-top: 0%;
+  margin-top: 10%;
   width: 20%;
-  height: 200vh;
+  height: 100vh;
   background-color: white ;
   text-align: center;
 
@@ -62,7 +95,7 @@ nav{
 }
 
 a:hover {
-  text-decoration: rgb(225, 195, 140) 4px underline overline !important;
+  text-decoration: rgb(225, 195, 140) 4px underline  ;
 }
 
  
@@ -72,7 +105,7 @@ a:hover {
   align-items: center;
   width: 100%;
   font-size: 20px;
-  min-height: 8vh;
+  min-height: 7vh;
   background-color: 	#EDEADE ;
 
 }
@@ -126,7 +159,7 @@ li a{
   margin-top: 8%;
    width: 200px;
    margin: 10%; 
-  
+  flex-flow: row wrap;
    background-color: #EDEADE;
    text-align: center;
    justify-content: space-between;
@@ -140,7 +173,15 @@ li a{
   background-color: white;
   align-items: flex-start;
   text-align: center;
+  
 }
+
+.flexbox-item-1:hover{
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
 
 .flexbox-item-2{
   height: 110px;
@@ -149,7 +190,7 @@ li a{
 
 .flexbox-item-3{
   height: 110px;
-  background-color:  white; ;
+  background-color:  white; 
 }
 
 main {
@@ -176,10 +217,14 @@ main {
 .contbox-item{
   display: flex;;
    width: 250px;
-  border: 3px solid black;
+  
    background-color: #EDEADE;
    text-align: center;
    justify-content: space-between;
+}
+
+.contbox-item *:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contbox-item-1{
@@ -220,16 +265,25 @@ main {
   position:absolute;
   bottom: 10px;
   margin-top: 10px;
-  width: 80px;
+  width: 60px;
   height: 20px;
   left: 90px;
 }
 
 .pricetext {
-  margin-left: 48%;
+  margin-left: 42%;
 }
 
 .divimg{
   max-width: 100%; 
   max-height: 100%;
 }
+
+.NEW1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-top: 8%;
+}
+
